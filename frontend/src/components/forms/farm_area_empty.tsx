@@ -4,9 +4,9 @@ import { useAddAreaMutation } from '../../redux/reducers/api';
 import { FarmData } from '../../redux/reducers/api';
 
 function AreaFormNew(props: {farm: FarmData}) {
-    const [areaType, setAreaType] = useState("");
+    const [areaType, setAreaType] = useState("AR");
     const [areaHectares, setAreaHectares] = useState("");
-    const [crops, setCrops] = useState("");
+    const [crops, setCrops] = useState("SO");
 
     const [areaAdd] = useAddAreaMutation();
 
@@ -15,7 +15,10 @@ function AreaFormNew(props: {farm: FarmData}) {
         <Form>
             <Form.Group controlId="areaType">
                 <Form.Label>Tipo de Área</Form.Label>
-                <Form.Control type="text" placeholder="Tipo de Área" value={areaType} onChange={(e) => setAreaType(e.target.value)} />
+                <Form.Select aria-label="Default select example" value={areaType} onChange={(e) => setAreaType(e.target.value)}>
+                    <option value="AR">Agricultável</option>
+                    <option value="VE">Vegetação</option>
+                </Form.Select>
             </Form.Group>
 
             <Form.Group controlId="areaHectares">
@@ -25,7 +28,13 @@ function AreaFormNew(props: {farm: FarmData}) {
 
             <Form.Group controlId="crops">
                 <Form.Label>Culturas</Form.Label>
-                <Form.Control type="text" placeholder="Culturas" value={crops} onChange={(e) => setCrops(e.target.value)} />
+                <Form.Select aria-label="Default select example" value={crops} onChange={(e) => setCrops(e.target.value)}>
+                    <option value="SO">Soja</option>
+                    <option value="MI">Milho</option>
+                    <option value="AL">Algodão</option>
+                    <option value="CA">Café</option>
+                    <option value="CS">Cana de Açucar</option>
+                </Form.Select>
             </Form.Group>
 
             <Button variant="primary" onClick={() => {
