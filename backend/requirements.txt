@@ -1,0 +1,9 @@
+Django~=4.2.0
+djangorestframework
+djangorestframework-simplejwt
+django-cors-headers
+gunicorn~=21.2.0
+psycopg2-binary~=2.9.0
+python-decouple==3.8
+requests
+validate-docbr

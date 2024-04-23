@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  api:
+    build: .
+    image: us-central1-docker.pkg.dev/alo-journey/alo-journey/backend-green
+    volumes:
+      - .:/src
+    ports:
+      - "8000:8000"
