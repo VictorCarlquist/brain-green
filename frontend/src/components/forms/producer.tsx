@@ -10,7 +10,7 @@ function ProducerForm(props: {producer: ProducerData}) {
     const [name, setName] = useState(props.producer.name);
     const [cpfCnpj, setCpfCnpj] = useState(props.producer.cpf_cnpj);
 
-    const [producerUpdate, isLoadingDelete] = useUpdateProducerMutation();
+    const [producerUpdate] = useUpdateProducerMutation();
     const [producerDelete] = useDeleteProducerMutation();
 
     return (
