@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useLoginMutation } from '../redux/reducers/api';
 
 function Login() {
@@ -9,12 +9,6 @@ function Login() {
     const [login, { isLoading }] = useLoginMutation();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-
-    useEffect(() => {
-        if (localStorage.getItem('access') === null) {
-            window.location.href = '/'
-        }
-    }, []);
 
     return (
         <>

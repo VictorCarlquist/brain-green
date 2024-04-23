@@ -52,7 +52,7 @@ export interface PieByAreaType{
 export const apiSlice = createApi({
     reducerPath: "loginApi",
     baseQuery: fetchBaseQuery({
-        baseUrl: "http://127.0.0.1:8000",
+        baseUrl: "http://34.67.136.167:8000",
         prepareHeaders(headers) {
             let access = localStorage.getItem("access");
             if (!access)
