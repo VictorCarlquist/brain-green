@@ -26,7 +26,7 @@ A `View` implementa a comunição com o cliente.
 O `UseCase` possui as regras de negócios.
 A `Entity` possui a interface com o banco de dados.
 
-Neste projeto, eu criei apenas um tipo de Entity o `ORM` que é nativo do django. Mas note que se houver necessidade é possível criar uma outra Entity para buscar dados utilizando outra tecnologia, como o `GraphQL`, busca em Arquivo e etc, sem precisar alterar as camadas anteriores (`View` e `UseCases`).
+Neste projeto, eu criei apenas um tipo de Entity, o `ORM` que é nativo do django. Mas note que se houver necessidade, é possível criar uma outra Entity para buscar dados utilizando outra tecnologia, como o `GraphQL`, busca em Arquivo e etc, sem precisar alterar as camadas anteriores (`View` e `UseCases`).
 
 PS. As validações do CPF, CNPJ e da Área, estão sendo feitas apenas no backend.
 
@@ -37,11 +37,15 @@ HOST BACKEND:
 
 > http://34.67.136.167:8000
 
-0. `token/` retornar o token Bearer para utulizar os demais endpoints.
+0. `token/` retorna o token Bearer para utilizar os demais endpoints.
+
+```json
+[
 {
     "username": "admin",
     "password": "admin"
 }
+]
 
 
 1. `producer/`: Este endpoint retorna uma lista de todos os produtores. Um exemplo de resposta pode ser:
