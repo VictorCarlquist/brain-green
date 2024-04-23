@@ -4,7 +4,10 @@ O site está hospedado em:
 
 > http://34.136.163.239:5173/
 
+o site está em http e não em https.
+
 user: admin
+
 pass: admin
 
 
