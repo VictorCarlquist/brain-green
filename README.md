@@ -46,7 +46,7 @@ HOST BACKEND:
     "password": "admin"
 }
 ]
-
+```
 
 1. `producer/`: Este endpoint retorna uma lista de todos os produtores. Um exemplo de resposta pode ser:
 (POST, GET)
