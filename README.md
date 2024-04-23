@@ -7,6 +7,8 @@ O site está hospedado em:
 user: admin
 pass: admin
 
+
+
 ## Backend
 
 O backend foi desenvolvimento em:
@@ -26,7 +28,18 @@ A `Entity` possui a interface com o banco de dados.
 
 Neste projeto, eu criei apenas um tipo de Entity o `ORM` que é nativo do django. Mas note que se houver necessidade é possível criar uma outra Entity para buscar dados utilizando outra tecnologia, como o `GraphQL`, busca em Arquivo e etc, sem precisar alterar as camadas anteriores (`View` e `UseCases`).
 
-Aqui estão alguns exemplos de como os dados JSON podem ser retornados desses endpoints:
+### Auth
+
+HOST BACKEND:
+
+> http://34.67.136.167:8000
+
+0. `token/` retornar o token Bearer para utulizar os demais endpoints.
+{
+    "username": "admin",
+    "password": "admin"
+}
+
 
 1. `producer/`: Este endpoint retorna uma lista de todos os produtores. Um exemplo de resposta pode ser:
 (POST, GET)
