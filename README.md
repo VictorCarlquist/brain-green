@@ -2,7 +2,7 @@ Esse trabalho é para vaga de Python/Django.
 
 O site está hospedado em:
 
-> http://34.136.163.239:5173/
+> http://34.69.25.244:5173/
 
 o site está em http e não em https.
 
@@ -38,7 +38,7 @@ PS. As validações do CPF, CNPJ e da Área, estão sendo feitas apenas no backe
 
 HOST BACKEND:
 
-> http://34.67.136.167:8000
+> http://35.192.131.238:8000
 
 0. `token/` retorna o token Bearer para utilizar os demais endpoints.
 
