@@ -2,7 +2,7 @@ Esse trabalho é para vaga de Python/Django.
 
 O site está hospedado em:
 
-> http://34.69.25.244:5173/
+> [http://brain.alojourney.com/](http://brain.alojourney.com/)
 
 o site está em http e não em https.
 
