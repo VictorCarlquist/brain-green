@@ -38,7 +38,7 @@ PS. As validações do CPF, CNPJ e da Área, estão sendo feitas apenas no backe
 
 HOST BACKEND:
 
-> http://35.192.131.238:8000
+> http://35.238.61.144:8000
 
 0. `token/` retorna o token Bearer para utilizar os demais endpoints.
 
